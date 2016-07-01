@@ -19,7 +19,7 @@ request('GET',
             var rand_pick = uniqueRandomArray(JSON.parse(res.getBody('utf8')).feed.entry);
             var siga = rand_pick();
             console.log(wrap(entities.decode(siga.content.$t.substring(siga.content.$t.indexOf('name: ') + 6)), {
-                width: 80,
+                width: 79,
                 indent: ''
             }));
         } else {
